@@ -25,6 +25,7 @@ const colorize = name => {
     let color = 1;
     for (const letter of letters) {
         res += colorrer(letter, color++);
+        //ToDo можно ли обойтись без присвоения color = 1
         if (color > COLORS.length) color = 1;
     }
     return res;
